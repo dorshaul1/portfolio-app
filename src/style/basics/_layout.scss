@@ -1,0 +1,102 @@
+// .main-layout {
+//     display: grid;
+//     grid-template-columns: 0.5rem 1fr 0.5rem;
+//     > * {
+//         grid-column: 2;
+//     }
+
+//     > .full {
+//         grid-column: 1 / -1;
+//     }
+
+//     @include for-narrow-layout {
+//         grid-template-columns: 
+//         minmax(2rem, 1fr)
+//         minmax(auto, $mobile-breakpoint)
+//         minmax(2rem, 1fr)
+//         ;     
+//     }
+
+//     @include for-normal-layout {
+//         grid-template-columns: 
+//         minmax(2rem, 1fr)
+//         minmax(auto, $narrow-breakpoint)
+//         minmax(2rem, 1fr)
+//         ;     
+//     }
+
+//     @include for-wide-layout {
+//         grid-template-columns: 
+//         minmax(2rem, 1fr)
+//         minmax(auto, $normal-breakpoint)
+//         minmax(2rem, 1fr)
+//         ;     
+//     }
+
+// }
+
+// .main-layout-flex{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-flow: column;
+//     text-align:center;
+//     .page-container{
+//         flex-grow:1;
+//         width:100%;
+//         // overflow: auto;
+//         .page-content{
+//             margin:0 auto;
+//             min-height: 100%;
+//         }
+//         @include for-narrow-layout{
+//             &>*{
+//                 width: calc(100vw - 50px);
+//             }
+//         }
+//         @include for-normal-layout{
+//             &>*{
+//                 width: calc(100vw - 250px);
+//             }
+//         }
+//         @include for-wide-layout{
+//             &>*{
+//                 width: calc(100vw - 650px);
+//             }
+//         }
+//     }
+//     .main-header-content{
+//         @include for-narrow-layout{
+//             width: calc(100vw - 50px);
+//             margin:0 auto;
+//         }
+//         @include for-normal-layout{
+//             width: calc(100vw - 250px);
+//         }
+//         @include for-wide-layout{
+//             width: calc(100vw - 650px);  
+//         }
+//     }
+
+// }
+
+// .card-grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+//     grid-gap: 16px;
+//     grid-auto-flow: dense;
+
+//     grid-auto-rows: 300px;
+
+//     > * {
+//         @include aspect-ratio(1, 1);
+//     }
+
+//     > *:nth-child(3n) {
+//         grid-row: span 2;
+//     }
+
+//     > *:nth-child(4n) {
+//         grid-column: span 2;
+//     }
+// }

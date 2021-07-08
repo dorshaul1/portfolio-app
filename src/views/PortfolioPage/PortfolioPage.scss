@@ -1,0 +1,34 @@
+@import "../../style/setup/setup.scss";
+
+.portfolio-page {
+    padding: $page-padding;
+    padding-block: 50px;
+    min-height: 90vh;
+    @media only screen and (max-width: $normal-breakpoint) {
+        padding: $page-padding-mobile;
+        padding-block: 50px;
+    }
+    .main-title {
+        width: 500px;
+        position: relative;
+        @media only screen and (max-width: $narrow-breakpoint) {
+            width: 100%;
+        }
+        h1 {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 30px;
+            @media only screen and (max-width: $normal-breakpoint) {
+                font-size: 2.7rem;
+                line-height: 2.7rem;
+            }
+        }
+        .decorarion {
+            width: 15%;
+            height: 10px;
+            background-color: $clr-primary;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

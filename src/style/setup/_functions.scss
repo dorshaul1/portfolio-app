@@ -1,0 +1,28 @@
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return ($remSize) * 1rem;
+}
+
+@function em($pixels, $context: 16px) {
+  @return ($pixels/$context) * 1em;
+}
+
+
+//returns a color by calculating the lightness of the passed color.
+@function set-color($color,$clamp) {
+    @if (lightness($color) < $clamp) {
+      @return $clr-white;
+    }
+    @else {
+      @return $clr-black;
+    }
+}
+
+
+@function getTransition($transition, $transition-duration, $categories){
+    $result : ();
+    @each $category in $categories{
+        $result:append($result,$category $transition-duration $transition,$separator: comma)
+    }
+    @return $result
+}

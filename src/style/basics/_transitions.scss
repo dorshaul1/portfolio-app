@@ -1,0 +1,40 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.list-column-enter-active,
+.list-column-leave-active {
+  position: absolute;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.list-column-move {
+  transition: all 0.25s ease;
+}
+
+.list-column-enter,
+.list-column-leave-to {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.slide-scale-down-enter-active,
+.slide-scale-down-leave-active {
+  transform-origin: top;
+  transform: scaleY(1);
+  transition: max-height .25s ease-in, transform 0.25s ease-in;
+  max-height:500px;
+}
+
+.slide-scale-down-enter,
+.slide-scale-down-leave-to {
+  transform: scaleY(0);
+  max-height:0;
+  //transition: transform 0.25s ease;
+  transition: max-height .5s ease-out, transform 0.25s ease-out;
+}

@@ -1,0 +1,1 @@
+export { Specialities } from './Specialities'

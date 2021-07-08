@@ -1,0 +1,54 @@
+@import "../../style/setup/setup.scss";
+
+.project-details {
+    .screen {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: rgba(0, 0, 0, 0.226);
+    }
+    .details-content {
+        background-color: $clr1;
+        height: 70vh;
+        width: 600px;
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 7px;
+        padding: 20px;
+        cursor: auto;
+        @media only screen and (max-width: $narrow-breakpoint) {
+            width: 90%;
+        }
+        .close-btn{
+            position: absolute;
+            color: $clr-negative;
+            top: 0;
+            right: 8px;
+            font-size: 1.5rem;
+        }
+        h3 {
+            color: white;
+        }
+        h4 {
+            color: $clr-gray-light;
+        }
+        .project-image {
+            width: 100%;
+            margin: 20px 0;
+        }
+        a {
+            align-self: center;
+            color: $clr-primary;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}

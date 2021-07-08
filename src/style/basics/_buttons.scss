@@ -1,0 +1,28 @@
+@import '../setup/setup.scss';
+
+button{
+    $darken-amount:25;
+    border:3px solid transparent;
+    border-radius: 5px;
+    outline: 0;
+    background-color: $clr-primary;
+    color: set-color($clr-primary,55);
+    padding-block: 5px;
+    
+    $categories:border,border-color,background-color;
+    $transition-string: getTransition(linear, .25s, $categories);
+    transition:$transition-string;
+    
+    &:hover{
+        border:3px solid transparentize( set-color($clr-primary,55) , 0.5)
+    }
+    &:active{
+        $color: darken($clr-primary,$darken-amount);
+        background-color: $color;
+        color:set-color($color,55);
+    }
+    &:focus{
+        border-color:darken($clr-primary,$darken-amount);
+    }
+
+}

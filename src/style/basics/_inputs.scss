@@ -1,0 +1,29 @@
+@import '../setup/setup.scss';
+
+input{
+    background: $clr-white;
+    border-radius: 4px;
+    border:0;
+    border-bottom: 5px solid transparent;
+
+    padding:5px;
+    outline: none;
+
+    transition: .25s linear border, .1s linear border-radius;
+    &::placeholder{
+        color:lighten($clr-gray-light,10)
+    }
+
+    &:hover,&:focus{border-radius: 5px 5px 0 0;}
+    &:hover{
+        border-bottom-color: $clr-gray-light;
+        
+    }
+    &:focus{
+        border-bottom-color:$clr-primary;
+    }
+    &:active{
+        border-bottom-color: darken($clr-primary,20);
+        transition: .1s linear border, .1s linear border-radius;
+    }
+}

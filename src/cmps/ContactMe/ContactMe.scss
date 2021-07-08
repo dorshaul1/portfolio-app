@@ -1,0 +1,75 @@
+@import "../../style/setup/setup.scss";
+
+.contact-me {
+    background-color: $clr3;
+    padding: $page-padding;
+    padding-block: 50px;
+    min-height: 60vh;    @media only screen and (max-width: $narrow-breakpoint) {
+        gap: 20px;
+    }
+    @media only screen and (max-width: $normal-breakpoint) {
+        padding: $page-padding-mobile;
+        padding-block: 50px;
+    }
+    .title {
+        @include title;
+    }
+    .email-container {
+        @media only screen and (max-width: $narrow-breakpoint) {
+            width: 50%;
+        }
+        .email-title {
+            margin-top: 20px;
+        }
+        input {
+            margin-top: 20px;
+            width: 300px;
+            padding: 5px;
+            @media only screen and (max-width: $narrow-breakpoint) {
+                width: 100%;
+            }
+        }
+        .body-input {
+            // height: 100px;
+            padding: 5px 0 100px 5px;
+        }
+        .send-btn {
+            margin-top: 40px;
+            width: 50px;
+        }
+    }
+    .me {
+        @media only screen and (max-width: $narrow-breakpoint) {
+            // width: 50%;
+            margin-left: 25px;
+        }
+        h5{
+            align-self: flex-start;
+            margin-bottom: 10px;
+            color: $clr-gray-light;
+            @media only screen and (max-width: $narrow-breakpoint) {
+                font-size: .75rem;;
+                // margin-left: 28%;
+            }
+        }
+        .image-me {
+            margin-top: 20px;
+            border-radius: 50%;
+            width: 170px;
+            margin-bottom: 20px;
+            @media only screen and (max-width: $narrow-breakpoint) {
+                width: 120px;
+            }
+        }
+        .social-medias {
+            padding: 0 auto;
+            // align-self: center;
+            a {
+                margin: 0 15px;
+            }
+            img {
+                width: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../setup/setup.scss';
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(43, 43, 43, 0.884);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.281);
+  border-radius: 20px;
+}

@@ -1,0 +1,51 @@
+@import '../setup/setup.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    color:$clr-black;
+}
+
+body {
+    margin: 0;
+    font-size: rem(16px);
+    line-height: rem(20px) ;
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0 0;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+    font-size: rem(20px);
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+button, a{
+    cursor:pointer
+}
+
+// textarea,
+// textarea::placeholder,
+// input::placeholder{
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     //padding-left:7px;
+//     font-size: 1rem;
+//   }
+// textarea{
+//   padding:5px;
+//   border-radius: 5px;
+// }

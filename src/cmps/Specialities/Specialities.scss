@@ -1,0 +1,15 @@
+@import "../../style/setup/setup.scss";
+
+.specialities {
+    min-height: 100vh;
+    background-color: $clr2;
+    padding: $page-padding;
+    padding-block: 50px;
+    @media only screen and (max-width: $normal-breakpoint) {
+        padding: $page-padding-mobile;
+        padding-block: 50px;
+    }
+    .title {
+        @include title;
+    }
+}

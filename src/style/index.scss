@@ -1,0 +1,22 @@
+@import './setup/setup.scss';
+@import './basics/basics.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: rgb(246, 251, 255);
+}
+
+
+a{
+  text-decoration: none;
+  color: black
+}
+
+.loader{
+  width: 50px;
+  margin: auto;
+  margin-top: 50px;
+}

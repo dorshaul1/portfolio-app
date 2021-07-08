@@ -1,0 +1,61 @@
+@import "../../style/setup/setup.scss";
+
+.skills {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+        margin-bottom: 10vh;
+        @media only screen and (max-width: $narrow-breakpoint) {
+            margin-bottom: 3vh;
+        }
+    }
+    .title-container {
+        .decoration {
+            background-color: $clr-primary;
+            width: 7px;
+            margin-right: 10px;
+        }
+    }
+    .skills-container {
+        margin-top: 30px;
+        justify-content: space-evenly;
+        @media only screen and (max-width: $narrow-breakpoint) {
+            justify-content: space-around;
+        }
+        .skill {
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+            background-color: $clr1;
+            border-radius: 7px;
+            @media only screen and (max-width: $narrow-breakpoint) {
+                height: 120px;
+                width: 120px;
+            }
+            @media only screen and (max-width: $mobile-breakpoint) {
+                height: 100px;
+                width: 100px;
+            }
+            .skill-content {
+                justify-self: flex-end;
+                h2 {
+                    font-size: 0.9rem;
+                    @media only screen and (max-width: $narrow-breakpoint) {
+                        font-size: 0.67rem;
+                    }
+                }
+                img {
+                    height: 28px;
+                    margin-right: 10px;
+                    @media only screen and (max-width: $narrow-breakpoint) {
+                        height: 24px;
+                    }
+                    @media only screen and (max-width: $mobile-breakpoint) {
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

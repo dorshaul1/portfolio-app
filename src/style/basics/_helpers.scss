@@ -1,0 +1,85 @@
+@import '../setup/setup.scss';
+
+.site-block {
+    margin-bottom: rem(20px);
+}
+
+Aspect ratios
+.ratio-16-9 {
+    @include aspect-ratio(100, 56);
+}
+
+.ratio-square {
+    @include aspect-ratio(100, 100);
+}
+
+.ratio-card {
+    @include aspect-ratio(100, 80);
+}
+
+.ratio-poster {
+    @include aspect-ratio(100, 150);
+}
+
+.profile-picture {
+    background: $clr-gray-dark;
+    border-radius: 15px;
+    box-shadow: $subtle-flat-shadow;
+    height: 150px;
+    width: 150px;
+    &.round {
+        border-radius: 50%;
+    }
+    &.large {
+        box-shadow: $medium-flat-shadow;
+        height: 350px;
+        width: 350px;
+    }
+    &.small {
+        height: 50px;
+        width: 50px;
+    }
+}
+//Basic helpers
+.clean-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+/* FLEX - BASE */
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: flex-start;
+    }
+    &.space-between {
+        justify-content: space-between;
+    }
+    &.center-self {
+        align-self: center;
+        justify-self: center;
+    }
+    &.flex-start {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &.center {
+        justify-content: center;
+        align-items: center;
+    }
+    &.wrap {
+    flex-wrap: wrap;
+    }
+}
