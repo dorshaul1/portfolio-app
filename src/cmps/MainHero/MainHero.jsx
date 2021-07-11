@@ -3,6 +3,7 @@ import github from '../../assets/images/icons/github.png'
 import instagram from '../../assets/images/icons/instagram.png'
 import linkedin from '../../assets/images/icons/linkedin.png'
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -54,12 +55,13 @@ export const MainHero = (props) => {
                 <motion.h4 variants={item} className="title">About me</motion.h4>
                 <motion.h3 variants={item} className="job-title">Full stack / Frontend<br />Developer</motion.h3>
                 <motion.p variants={item}>Full-Stack Web Developer specializing in advanced frameworks including React, VueJS, NodeJS and MongoDB.
-                <br />Army service at the Israeli Navy Computer Unit – Mamtam as Cyber Security Analyst.
-                <br />Passionate about technology, striving to be the best, fast learner, and a team player.
-                <br />Excellent organizational skills, out of the box creative thinker and Work well under pressure.
+                    <br />Army service at the Israeli Navy Computer Unit – Mamtam as Cyber Security Analyst.
+                    <br />Passionate about technology, striving to be the best, fast learner, and a team player.
+                    <br />Excellent organizational skills, out of the box creative thinker and Work well under pressure.
                 </motion.p>
+                <motion.div className="projects-link" variants={item}><Link  to="/portfolio">Have a look at my projects</Link></motion.div>
             </motion.div>
         </div>
-    )
+                )
 }
 

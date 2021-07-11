@@ -16,15 +16,6 @@ const projects = [
         imgUrl: 'taskolo',
     },
     {
-        id: "p2",
-        name: "Appsus",
-        title: "Notes and Mailbox",
-        desc: "Mail and notes app based on Vue.",
-        url: 'https://yonatanmiz963.github.io/Appsus/',
-        publishedAt: 1619344441,
-        imgUrl: 'appsus',
-    },
-    {
         id: "p3",
         name: "moviex",
         title: "movies information",
@@ -32,6 +23,15 @@ const projects = [
         url: 'https://moviex-app.herokuapp.com/',
         publishedAt: 1622888185,
         imgUrl: 'moviex',
+    },
+    {
+        id: "p2",
+        name: "Appsus",
+        title: "Notes and Mailbox",
+        desc: "Mail and notes app based on Vue.",
+        url: 'https://yonatanmiz963.github.io/Appsus/',
+        publishedAt: 1619344441,
+        imgUrl: 'appsus',
     },
     {
         id: "p4",

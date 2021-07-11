@@ -42,7 +42,7 @@
                 h2 {
                     font-size: 0.9rem;
                     @media only screen and (max-width: $narrow-breakpoint) {
-                        font-size: 0.67rem;
+                        font-size: 0.6rem;
                     }
                 }
                 img {
@@ -50,9 +50,10 @@
                     margin-right: 10px;
                     @media only screen and (max-width: $narrow-breakpoint) {
                         height: 24px;
+                        margin-right: 5px;
                     }
                     @media only screen and (max-width: $mobile-breakpoint) {
-                        height: 24px;
+                        height: 18px;
                     }
                 }
             }
