@@ -80,11 +80,11 @@ export const ContactMe = (props) => {
                         animate={controls}
                         variants={item}
                         className="email-title">Body</motion.h3>
-                    <motion.input
+                    <motion.textarea
                         initial="hidden"
                         animate={controls}
                         variants={item}
-                        className="body-input" type="text" id="body" onChange={handleChange} name="body" />
+                        className="body-input" id="body" onChange={handleChange} name="body" />
                     <motion.button
                         initial="hidden"
                         animate={controls}

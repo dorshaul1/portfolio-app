@@ -21,7 +21,8 @@
         .email-title {
             margin-top: 20px;
         }
-        input {
+        input, textarea {
+            resize: none;
             margin-top: 20px;
             width: 300px;
             padding: 5px;
